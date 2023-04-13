@@ -1,0 +1,32 @@
+---
+dependencies: []
+
+galaxy_info:
+  role_name: ohmyzsh
+  author: kmezynski
+  description: Installs and configures Oh My Zsh framework with given plugins.
+  license: license (MIT)
+  min_ansible_version: 2.4
+  standalone: true
+
+  platforms:
+    - name: Debian
+      versions:
+        - buster
+        - bullseye
+    - name: Ubuntu
+      versions:
+        - xenial
+        - bionic
+        - focal
+        - jammy
+    - name: Fedora
+      versions:
+        - all
+
+  galaxy_tags:
+    - ohmyzsh
+    - zsh
+    - shell
+    - terminal
+    - setup
