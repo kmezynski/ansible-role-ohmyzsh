@@ -1,0 +1,4 @@
+---
+ohmyzsh_packages:
+  - git
+  - zsh

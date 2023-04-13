@@ -1,0 +1,11 @@
+---
+# ohmyzsh installation
+ohmyzsh_path: "{{ ansible_user_dir }}/.oh-my-zsh"
+ohmyzsh_config_path: "{{ ansible_user_dir }}"
+
+# ohmyzsh configuration
+ohmyzsh_autoupdate: false
+ohmyzsh_autoupdate_frequency: 14
+ohmyzsh_theme: robbyrussell
+ohmyzsh_plugins:
+  - git
