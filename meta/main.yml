@@ -26,8 +26,6 @@ galaxy_info:
 
   galaxy_tags:
     - ohmyzsh
-    - oh-my-zsh
-    - oh-my-zsh-plugin
     - zsh
     - shell
     - terminal

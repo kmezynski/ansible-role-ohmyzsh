@@ -1,7 +1,7 @@
 ---
 - name: Ensure Oh My Zsh dependencies are installed.
   become: "{{ ansible_distribution != 'MacOSX' }}"
-  package:
+  ansible.builtin.package:
     update_cache: true
     name: "{{ ohmyzsh_packages }}"
     state: present
@@ -20,9 +20,10 @@
     dest: "{{ ohmyzsh_path }}"
     version: master
 
-- name: Ensure {{ ohmyzsh_config_path }} is present.
+- name: Ensure ohmyzsh_config_path is present.
   ansible.builtin.file:
     path: "{{ ohmyzsh_config_path }}"
+    mode: 0775
     state: directory
 
 - name: Install zsh initalization script.
