@@ -6,14 +6,14 @@
     name: "{{ ohmyzsh_packages }}"
     state: present
     install_recommends: false
-  
+
 - name: Set zsh as a default shell.
   become: true
   ansible.builtin.user:
     name: "{{ ansible_user_id }}"
     shell: /bin/zsh
     state: present
-    
+
 - name: Ensure Oh My Zsh repository is cloned.
   ansible.builtin.git:
     repo: https://github.com/ohmyzsh/ohmyzsh

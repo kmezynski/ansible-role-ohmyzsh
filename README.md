@@ -21,8 +21,8 @@ ohmyzsh_config_path: "{{ ansible_user_dir }}"
 
 These variables control Oh My Zsh installation process:
 
-* `ohmyzsh_path` - path to Oh My Zsh installation directory.
-* `ohmyzsh_config_path` - path to Zsh shell initialization script.
+- `ohmyzsh_path` - path to Oh My Zsh installation directory.
+- `ohmyzsh_config_path` - path to Zsh shell initialization script.
 
 ```yaml
 ohmyzsh_autoupdate: false
@@ -34,10 +34,10 @@ ohmyzsh_plugins:
 
 Above variables configures Oh My Zsh after installation:
 
-* `ohmyzsh_autoupdate` - enables Oh My Zsh auto-updates.
-* `ohmyzsh_autoupdate_frequency` - auto-updates frequency for Oh My Zsh in days.
-* `ohmyzsh_theme` - name of official Oh My Zsh theme.
-* `ohmyzsh_plugins` - list of official Oh My Zsh plugins.
+- `ohmyzsh_autoupdate` - enables Oh My Zsh auto-updates.
+- `ohmyzsh_autoupdate_frequency` - auto-updates frequency for Oh My Zsh in days.
+- `ohmyzsh_theme` - name of official Oh My Zsh theme.
+- `ohmyzsh_plugins` - list of official Oh My Zsh plugins.
 
 ## Dependencies
 
