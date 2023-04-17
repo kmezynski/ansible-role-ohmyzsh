@@ -23,13 +23,13 @@
 - name: Ensure ohmyzsh_config_path is present.
   ansible.builtin.file:
     path: "{{ ohmyzsh_config_path }}"
-    mode: 0775
     state: directory
+    mode: 0775
 
 - name: Install zsh initalization script.
+  become: true
+  become_user: "{{ ansible_user_id }}"
   ansible.builtin.template:
     src: zshrc.j2
     dest: "{{ ohmyzsh_config_path }}/.zshrc"
-    owner: "{{ ansible_user_id }}"
-    group: "{{ ansible_user_id }}"
     mode: 0644
