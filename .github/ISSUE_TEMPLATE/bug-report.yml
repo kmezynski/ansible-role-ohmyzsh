@@ -10,9 +10,9 @@ body:
     attributes:
       value: >
         #### Before submitting a bug, please make sure the issue hasn't been
-        already addressed by searching through [Ansible issues](https://github.com/ansible/ansible/issues?page=1&q=is%3Aissue),
-        [Molecule issues](https://github.com/ansible-community/molecule/issues?page=1&q=is%3Aissue)
-        and [the existing and past issues](https://github.com/kmezynski/ansible-role-ohmyzsh/issues?q=is%3Aissue).
+        already addressed by searching through [Ansible issues](https://github.com/ansible/ansible/issues),
+        [Molecule issues](https://github.com/ansible-community/molecule/issues)
+        and [this project issues](https://github.com/kmezynski/ansible-role-ohmyzsh/issues).
   - type: textarea
     attributes:
       label: Describe the bug
