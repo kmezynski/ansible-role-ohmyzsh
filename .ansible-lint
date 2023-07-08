@@ -1,6 +1,5 @@
 ---
 skip_list:
+  - yaml
   - schema[meta]
   - risky-octal
-exclude_paths:
-  - ./.github/*
